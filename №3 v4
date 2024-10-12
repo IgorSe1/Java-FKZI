@@ -1,0 +1,20 @@
+public class MultiplicationTable {
+
+    public static void main(String[] args) {
+        // Виведення першого рядка 
+        System.out.print("    "); // для відступу перед першим стовпцем
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%4d", i); // друкуємо значення в першому рядку
+        }
+        System.out.println(); // перехід на новий рядок
+
+        // Виведення таблиці
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%4d", i); // перший стовпець таблиці
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%4d", i * j); // результат множення
+            }
+            System.out.println(); // перехід на новий рядок після кожного рядка
+        }
+    }
+}
